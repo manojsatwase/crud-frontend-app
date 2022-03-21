@@ -1,0 +1,42 @@
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 0;
+  background-color: #FFFFFF;
+  border-radius: 0;
+  font-size: 12px;
+  letter-spacing: 5px;
+  padding: 5px;
+  width: 100vw;
+  margin-top: 0px !important;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.25);
+}
+
+.header>a {
+  width: 2vmax;
+  height: 2vmax;
+  margin: 1vmax 4vmax;
+}
+
+.header>a>svg {
+  font-size: 2vmax;
+  transition: all 0.5s;
+  color: rgba(0, 0, 0, 0.445);
+}
+
+.header>a>svg:hover {
+  color: black;
+  transform: scale(1.2);
+}
+
+@media screen and (max-width: 675px) {
+  .header>a {
+    width: 8vw;
+    height: 8vw;
+    margin: 2vw 8vw;
+  }
+  .header>a>svg {
+    font-size: 8vw;
+  }
+}
